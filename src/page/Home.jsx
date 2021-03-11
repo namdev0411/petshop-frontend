@@ -1,5 +1,4 @@
 import React from 'react'
-import './Home.scss';
 import Header from '../components/Header';
 import ContentTitle from '../components/ContentTitle';
 import Categories from '../components/Categories';

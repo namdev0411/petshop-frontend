@@ -13,18 +13,19 @@
         list-style: none;
         .nav_list--item{
            margin: 0 10px;
-           &.cart{
-               a{
-                    font-size: 20px;
-               }
-           }
+        }
+    }
+    .cart{
+        display: inline-block;
+        .cart__icon{
+            font-size: 20px;
         }
     }
 }
 .menu__icon{
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 18px;
+    top: 30%;
     z-index: 2;
     cursor: pointer;
     display: none;
@@ -44,6 +45,7 @@
             flex-direction: column;
             width: 100%;
             height: 0px;
+            padding: 0;
 
             z-index: 1;
             overflow: hidden;
@@ -53,13 +55,21 @@
 
             position: absolute;
             top: -20px;
-
+            left: 0;
             .nav_list--item{
                margin: 6px 0;
                font-size: 30px;
             }
             &.active{
                 height: 300px;
+            }
+        }
+        .cart{
+            position: absolute;
+            top: 30%;
+            right: 18%;
+            .cart__icon{
+                font-size: 25px;
             }
         }
     }

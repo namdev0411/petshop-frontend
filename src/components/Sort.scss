@@ -1,0 +1,17 @@
+.sort{
+    display: flex;
+    justify-content: space-between;
+    .sort__select{   
+        outline: none;
+        padding: 0 10px;
+        height: 30px;
+        font-size: 13px;
+        font-weight: 600;
+        option{
+            font-size: 14px;
+        }   
+        &:focus{
+            border: 1px solid var(--primary--color);
+        }
+    }
+}

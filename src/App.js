@@ -1,10 +1,30 @@
 import React from 'react'
 import Home from './page/Home';
 import {Redirect, Route,Switch} from 'react-router-dom';
+import Shop from './page/Shop';
 
 export default function App() {
     const data = [
         {
+            name: "dog1",
+            price: 100000,
+            url: "https://aller-petfood.com/wp-content/uploads/2016/08/spot-white-puppy.jpg"
+        },
+        {
+            name: "dog2",
+            price: 140000,
+            url: "https://api.hub.jhu.edu/factory/sites/default/files/styles/soft_crop_2400/public/dog-pet.jpg?itok=SDt4Pqx7"
+        },
+        {
+            name: "dog3",
+            price: 123444,
+            url: "https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg"
+        },
+        {
+            name: "dog4",
+            price: 200000,
+            url: "https://www.dogdept.jp/pic-labo/21ss_category_dogwear.jpg"
+        },{
             name: "dog1",
             price: 100000,
             url: "https://aller-petfood.com/wp-content/uploads/2016/08/spot-white-puppy.jpg"
@@ -56,6 +76,13 @@ export default function App() {
                         categories,
                         offer
                     }}/>
+                </Route>
+                <Route path="/shop">
+                    <Shop
+                        data={{
+                            allpets: data
+                        }}
+                    />
                 </Route>
                 <Redirect from="/" to="/home"/>
             </Switch>

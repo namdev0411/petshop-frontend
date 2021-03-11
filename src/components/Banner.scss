@@ -6,7 +6,7 @@
         justify-content: center;
         align-items: center;  
         flex-basis: 50%;
-        animation: textDisplay 3s;
+        animation: textDisplay 2s;
         .banner_body--title{
             font-size: 32px;
         }
@@ -31,7 +31,7 @@
     }
     .banner_image{
         flex-basis: 50%;
-        animation: rightIn 2s;
+        animation: rightIn 1.5s;
         img{
             width: 90%;
         }
@@ -59,7 +59,7 @@
     .banner{
         flex-direction: column;
         .banner_body{
-            animation: textDisplay600 3s;
+            animation: textDisplay600 2s;
         }
         .banner_image{
             text-align: center;

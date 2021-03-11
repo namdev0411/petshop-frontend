@@ -1,49 +1,59 @@
 .footer{
     background: var(--footer--bg);
-    height: 180px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    .footer__logo{
-        max-width: 300px;
-        .footer__logo__image{
-            width: 100%;
-        }
-    }
-    .footer__follow{
-        color: #fff;
-        .footer__follow__list{
-            list-style: none;
-            padding: 0;
-            .footer__follow__list__item{
-                font-size: 14px;
-                .footer__icon{
-                    font-size: 20px;
-                    margin: 3px 5px;
-                    transition: all .45s ease-out;
-                    cursor: pointer;
-                    transform: translateY(3px);
-                    &:hover{
-                        transform: scale(1.2) translateY(3px);;
-                    }
-                }
-                a{
-                    color: #eee;
-                }
-            }
-        }
-    }
-}
-@media only screen and(max-width:600px){
-    .footer{
+    .row{
+        justify-content: space-around;
+        align-items: center;
         .footer__logo{
-            max-width: 200px;
+            max-width: 300px;
             .footer__logo__image{
                 width: 100%;
             }
         }
         .footer__follow{
-            display: inline-block;
+            color: #fff;
+            .footer__follow__list{
+                list-style: none;
+                padding: 0;
+                .footer__follow__list__item{
+                    font-size: 14px;
+                    .footer__icon{
+                        font-size: 20px;
+                        margin: 3px 5px;
+                        transition: all .45s ease-out;
+                        cursor: pointer;
+                        transform: translateY(3px);
+                        &:hover{
+                            transform: scale(1.2) translateY(3px);;
+                        }
+                    }
+                    a{
+                        color: #eee;
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        .copyright__text{
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0 0 10px 0;
+        }
+    }
+}
+@media only screen and(max-width:600px){
+    .footer{
+        .row{
+            .footer__logo{
+                max-width: 200px;
+                .footer__logo__image{
+                    width: 100%;
+                }
+            }
+            .footer__follow{
+                display: inline-block;
+            }
         }
     }
 }
