@@ -1,0 +1,19 @@
+.pay{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .pay__item{
+        font-size: 130px;
+        margin: 45px;
+    }
+}
+@media only screen and(max-width:600px){
+    .pay{
+        height: auto;
+        .pay__item{
+            font-size: 50px;
+            margin: 15px;
+        }
+    }
+}

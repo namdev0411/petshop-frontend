@@ -1,0 +1,28 @@
+:root{
+    --primary--color: #ff1744;
+    --primary--bg: #f48fb1;
+    --footer--bg: #111;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.grid{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.btn{
+    cursor: pointer;
+}
+.fa-facebook{
+    color: #4c6ef5;
+}
+.fa-instagram{
+    color: #d6249f;
+}

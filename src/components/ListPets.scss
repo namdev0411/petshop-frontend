@@ -1,0 +1,69 @@
+.listpets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 100px auto;
+    .listpets__item{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        margin: 5px 5px;
+        padding: 5px 5px;
+        flex: 1;
+
+        cursor: pointer;
+        box-shadow: 0 0 20px 0px  rgba(0,0,0, 0.1);
+        transition: all .35s ease-in-out;
+
+        &:hover{
+            transform: scale(1.01)
+        }
+        .listpets__item__image{
+            display: inline-block;
+            object-fit: cover;
+            max-width: 100%;
+            height: 140px;
+            border-radius: 3px;
+        }
+        .listpets__item__info{
+            margin-left: 3px;
+            .listpets__item__name{
+                font-size: 20px;
+                font-weight: 600;
+                margin: 5px 0;
+            }
+            .listpets__item__ratting{
+                font-size: 13px;
+                color: #333;
+                cursor: pointer;
+            }
+            .listpets__item__price{
+                margin: 5px 0;
+                color: #555;
+            }
+        }
+    }
+    .add__cart{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        font-size: 23px;
+        transition: all .15s ease-in-out;
+        &:hover{
+            color: var(--primary--color);
+        }
+    }
+}
+@media only screen and(max-width: 600px){
+    .listpets{
+        flex-direction: column;
+        .listpets__item{
+            .listpets__item__image{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
