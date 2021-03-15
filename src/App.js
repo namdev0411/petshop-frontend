@@ -87,7 +87,7 @@ export default function App() {
     return (
         <div>
             <Switch>
-                <Route path="/">
+                <Route path="/home">
                     <Home data={{
                         listPets: data,
                         categories,
@@ -109,6 +109,7 @@ export default function App() {
                         }}
                     />
                 </Route>
+                <Redirect from="/" to="/home"/> 
             </Switch>
         </div>
     )
