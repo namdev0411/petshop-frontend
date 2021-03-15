@@ -12,7 +12,7 @@ export default function NavBar() {
             <div>
                 <ul className={displayNav? "nav_list active": "nav_list"}>
                     <li className="nav_list--item">
-                        <Link to="/home">Home</Link>
+                        <Link to="/">Home</Link>
                     </li> 
                     <li className="nav_list--item">
                         <Link to="/shop">Shop</Link>

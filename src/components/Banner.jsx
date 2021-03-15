@@ -13,7 +13,7 @@ export default function Banner() {
                     ペット買うならPet Shop に
                 </p>
                 <div className="banner_body--btn btn">
-                    <Link to="/home">直ぐに見ます&nbsp;→</Link>
+                    <Link to="/shop">直ぐに見ます&nbsp;→</Link>
                 </div>
             </div>
             <div className="banner_image">
