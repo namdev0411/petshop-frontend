@@ -1,12 +1,13 @@
 import React from 'react';
 import './ListPets.scss';
+import {Link} from 'react-router-dom';
 
-export default function ListPets({listPets}) {
+export default function ListPets({listPets,getPetDetail}) {
     return (
         <div className="listpets">
             {
                 listPets.map((pet,i)=>{
-                    return(<div className="listpets__item" key={i}>
+                    return(<Link to={`/detail/${pet.id}`} className="listpets__item" key={i} onClick={()=>getPetDetail(pet)}>
                             <img className="listpets__item__image" src={pet.url} alt={pet.name}/>
                             <div className="listpets__item__info">
                                 <h4 className="listpets__item__name">{pet.name}</h4>
@@ -22,7 +23,7 @@ export default function ListPets({listPets}) {
                             <div className="add__cart">
                                 <i className="fas fa-cart-plus"></i>
                             </div>
-                        </div>
+                        </Link>
                     )
                 }  
                 )
