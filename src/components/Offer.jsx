@@ -1,5 +1,6 @@
 import React from 'react';
 import './Offer.scss';
+import {Link} from 'react-router-dom';
 export default function Offer({offer}) {
     return (
         <div className="offer">
@@ -20,7 +21,7 @@ export default function Offer({offer}) {
                     Ex libero ratione iure rerum dolorem.
                 </p>
                 <div className="btn offer__btn">
-                    直ぐに買う&nbsp;→
+                    <Link to="/detail/offer">直ぐに買う&nbsp;→</Link>
                 </div>
             </div>
         </div>

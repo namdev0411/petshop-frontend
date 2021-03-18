@@ -7,14 +7,14 @@ import Offer from '../components/Offer';
 import Footer from '../components/Footer';
 import Pay from '../components/Pay';
 
-export default function Home({data}) {
+export default function Home({data,cartHandle}) {
     return (
         <div>
             <Header/>
             <Categories categories={data.categories}/>
             <ContentTitle title="Feature"/>
-            <ListPets listPets={data.listPets}/>
-            <Offer offer={data.offer}/>
+            <ListPets listPets={data.listPets} cartHandle={data.cartHandle}/>
+            <Offer offer={data.offer} cartHandle={cartHandle}/>
             <Pay/>
             <Footer/>
         </div>

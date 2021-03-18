@@ -33,3 +33,18 @@ a{
     max-width: 900px;
     margin: 0 auto;
 }
+.btn-primary{
+    background-color: var(--primary--color);
+    max-width: 120px;
+    text-align: center;
+    padding: 5px 18px;
+    margin-top: 25px;
+    border-radius: 18px;
+    transition: all .25s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    &:hover{
+        background: #9e1444;
+    }
+}

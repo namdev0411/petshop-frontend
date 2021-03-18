@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="footer">
             <div className="row">
                 <div className="footer__logo">
-                    <img src="images/logo.png" alt="logo" className="footer__logo__image"/>
+                    <img src="/images/logo.png" alt="logo" className="footer__logo__image"/>
                 </div>
                 <div className="footer__follow">
                     <h3 className="fotter__follow__title">

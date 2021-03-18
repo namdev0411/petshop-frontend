@@ -10,7 +10,7 @@ export default function Shop({data}) {
         <div>
              <NavBar/>
              <Sort/>
-             <ListPets listPets={data.allpets} getPetDetail={data.getPetDetail}/>
+             <ListPets listPets={data.allpets}/>
              <div className="container">
                 <Pagination allPage={3}/>
              </div>
