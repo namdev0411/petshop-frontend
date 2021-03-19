@@ -14,10 +14,10 @@ export default function App() {
     url: "https://aller-petfood.com/wp-content/uploads/2016/08/spot-white-puppy.jpg"},count: 2},
     {
         pet:{
-            id: 3,
-            name: "dog3",
-            price: 123444,
-            url: "https://i.ytimg.com/vi/MPV2METPeJU/maxresdefault.jpg" 
+            id: 2,
+            name: "dog2",
+            price: 140000,
+            url: "https://api.hub.jhu.edu/factory/sites/default/files/styles/soft_crop_2400/public/dog-pet.jpg?itok=SDt4Pqx7"
         },
         count: 5
     },
@@ -107,9 +107,26 @@ export default function App() {
         url: "https://k4h3w8q3.rocketcdn.me/wp-content/uploads/2021/01/frenchbulldog-hero02.png"
     }
     const cartHandle = (type,data)=>{
+        const {pet,count} = data;
+        const {id} = pet;
+        const checkExist = (id)=>{
+            const petIndex = cart.findIndex(item=>String(item.pet.id)===String(id));
+            if(petIndex>=0)return {
+                exist: true,
+                index: petIndex
+            }
+            return {
+                exist: false
+            }
+        }
         switch(type){
             case cartActionType.ADD:{
-                setcart([...cart,data]);
+                if(checkExist(id).exist){
+                    if(cart[checkExist(id).index].count<20)
+                    cart[checkExist(id).index].count+=1;
+                }else{
+                    setcart([...cart,data]);
+                }
                 break;
             }
             case cartActionType.DELETE:{

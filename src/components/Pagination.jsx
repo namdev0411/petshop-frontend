@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import './Pagination.scss';
 
-export default function Pagination({allPage}) {
+export default function Pagination({allPage,getPage}) {
     const [page, setpage] = useState(1);
 
     const changePage = (page)=>{
         setpage(page);
+        getPage(page);
     }
     const content = (allPage)=>{
         if(allPage){

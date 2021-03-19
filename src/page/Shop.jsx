@@ -5,12 +5,12 @@ import ListPets from '../components/ListPets'
 import Footer from '../components/Footer'
 import Pagination from '../components/Pagination'
 
-export default function Shop({data}) {
+export default function Shop({data,cartHandle}) {
     return (
         <div>
              <NavBar/>
              <Sort/>
-             <ListPets listPets={data.allpets}/>
+             <ListPets listPets={data.allpets} cartHandle={data.cartHandle}/>
              <div className="container">
                 <Pagination allPage={3}/>
              </div>
